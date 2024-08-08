@@ -1,4 +1,5 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
+import Image from "next/image";
 
 export default function CTACard({width, image, bg, title, cardClass}: any) {
     return (
@@ -17,7 +18,7 @@ export default function CTACard({width, image, bg, title, cardClass}: any) {
                 }}
                 className={"rounded-none w-full items-center justify-center " + `${width > 25 ? "flex" : ""}`}
             >
-                <img
+                <Image
                     className=""
                     src={`/assets/image/${image}`}
                     alt="card-image"

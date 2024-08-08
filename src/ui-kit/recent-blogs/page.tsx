@@ -1,4 +1,5 @@
 import { Avatar, Card, CardBody, CardFooter, CardHeader, Tooltip, Typography } from "@material-tailwind/react"
+import Image from "next/image"
 
 export default function RecentBlogs() {
     return (
@@ -22,7 +23,6 @@ export default function RecentBlogs() {
                                 name: ""
                             },
                         ].map(({name}: any, key: number) => (
-
                             <Card className="rounded-none" key={name+key} style={{width: "30rem"}}>
                                 <CardHeader
                                     floated={false}
@@ -30,9 +30,11 @@ export default function RecentBlogs() {
                                     color="transparent"
                                     className="m-0 rounded-none"
                                 >
-                                    <img
-                                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
-                                    alt="ui/ux review check"
+                                    <Image
+                                    width={400}
+                                    height={400}
+                                    alt="recent blog"
+                                    src="/assets/image/Rectangle 926.png"
                                     />
                                 </CardHeader>
                                 <div className="relative">
