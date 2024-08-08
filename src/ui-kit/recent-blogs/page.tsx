@@ -21,9 +21,9 @@ export default function RecentBlogs() {
                             {
                                 name: ""
                             },
-                        ].map(({}: any) => (
+                        ].map(({name}: any, key: number) => (
 
-                            <Card className="rounded-none" style={{width: "30rem"}}>
+                            <Card className="rounded-none" key={name+key} style={{width: "30rem"}}>
                                 <CardHeader
                                     floated={false}
                                     shadow={false}

@@ -51,7 +51,7 @@ export default function Home() {
               title: "Secure Payments",
               caption: "For seamless checkout"
             },
-          ].map((props: any) => <AdvantageCard {...props} />)
+          ].map((props: any, key: number) => <AdvantageCard key={props.title + key} {...props} />)
         }
       </section>
 
@@ -96,7 +96,7 @@ export default function Home() {
               bg: "Rectangle 887.png",
               title: "PENDANTS COLLECTION",
             },
-          ].map((props: any) => <CTACard {...props} />)
+          ].map((props: any, key: number) => <CTACard key={props.title + key} {...props} />)
         }
       </section>
 

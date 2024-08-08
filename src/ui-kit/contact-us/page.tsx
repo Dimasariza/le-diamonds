@@ -39,8 +39,8 @@ export default function ContactUs() {
                                 {
                                     name: ""
                                 },
-                            ].map((props: any) => (
-                                <div className="flex gap-3 mb-1">
+                            ].map((props: any, key: number) => (
+                                <div className="flex gap-3 mb-1" key={props.name + key}>
                                     {
                                         [
                                             {
@@ -55,8 +55,8 @@ export default function ContactUs() {
                                             {
                                                 name: ""
                                             },
-                                        ].map(({}: any) => (
-                                            <Card className="rounded-none" style={{width: "30rem"}}>
+                                        ].map(({name}: any, key: number) => (
+                                            <Card className="rounded-none" key={name+key} style={{width: "30rem"}}>
                                                 <CardHeader
                                                     floated={false}
                                                     shadow={false}

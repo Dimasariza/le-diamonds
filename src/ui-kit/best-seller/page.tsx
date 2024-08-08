@@ -76,9 +76,10 @@ export default function BestSeller() {
                         name: "ANDRÉE",
                         price: "$943.00 - $1,186.00"
                     },
-                ].map(({image, name, price}: any) => (
+                ].map(({image, name, price}: any, key: number) => (
                     <Card
                     shadow={false}
+                    key={name + key}
                     className={"flex rounded-none  items-end overflow-hidden col-6 text-center bg-red-200"}
                         >
                         <CardBody 
