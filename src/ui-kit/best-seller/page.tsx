@@ -1,4 +1,5 @@
 import { Button, Card, CardBody, CardFooter, CardHeader, Tooltip, Typography } from "@material-tailwind/react";
+import Image from "next/image";
 
 export default function BestSeller() {
     return (
@@ -85,7 +86,7 @@ export default function BestSeller() {
                         <CardBody 
                             className={"rounded-none items-center justify-center"}
                         >
-                            <img
+                            <Image
                                 src={`/assets/image/${image + ".png"}`}
                                 alt="card-image"
                                 width={300}

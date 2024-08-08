@@ -1,4 +1,5 @@
 import { Typography } from "@material-tailwind/react";
+import Image from "next/image";
 
 export default function Detail() {
     return (
@@ -24,8 +25,9 @@ export default function Detail() {
                 </Typography>
             </div>
 
-            <img
+            <Image
                 width={400}
+                height={100}
                 className=" object-cover object-center"
                 src="/assets/image/image 29.png"
                 alt="nature image"
