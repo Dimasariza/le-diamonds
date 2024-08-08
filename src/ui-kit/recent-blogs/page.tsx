@@ -44,7 +44,7 @@ export default function RecentBlogs() {
                                 </div>
                                 <CardBody>
                                     <Typography variant="h4" color="blue-gray">
-                                        CAN MOISSANITE BE YOUR NEXT'SUPERSTAR' JEWELRY STONE?
+                                        CAN MOISSANITE BE YOUR NEXT &apos;SUPERSTAR&apos; JEWELRY STONE?
                                     </Typography>
                                     <Typography variant="lead" color="gray" className="mt-3 font-normal">
                                         In a world where diamonds are the traditional choice most especially when buying an engagement ring..
